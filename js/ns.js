@@ -1,9 +1,9 @@
 $(document).ready(function() {
 	$("#run").click(function(){
 		$("#display li").remove();
-		var number = $("#number").val();
-		for (var i = 1; i <= number; i++) {
-			$("#display").append("<li>" + i + "</li>");
+		var alpha = $("#alpha").val();
+		for (var i = "a".charCodeAt(0); i <= alpha.charCodeAt(0); i++) {
+			$("#display").append("<li>" + String.fromCharCode(i) + "</li>");
 		}
 	});
 });
